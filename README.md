@@ -145,7 +145,7 @@ This SIP was checked against the [ARCHE deposition process](https://arche.acdh.o
 
 The DHd Book of Abstracts data is published under **CC BY 4.0**. The SPARQL queries, scripts, and metadata mappings in this repository are also released under CC BY 4.0.
 
-> Duan, Tinghui (2025). *DHd Conferences as an Evolving Constellation – ARCHE SIP*. GitHub. https://github.com/grid-creators/dhd-factgrid-arche
+> Duan, Tinghui (2026). *DHd Conferences as an Evolving Constellation – ARCHE SIP*. GitHub. https://github.com/grid-creators/dhd-factgrid-arche
 
 ---
 

@@ -1,0 +1,12 @@
+# Query 6: Leader board of authors based on their publications
+# Source: https://database.factgrid.de/wiki/FactGrid:The_DHd_conferences_as_an_evolving_constellation
+
+SELECT ?author ?authorLabel (COUNT(?pub) AS ?pubCount) WHERE {
+  ?pub wdt:P2 wd:Q257227;   # pub is of type Publication
+       wdt:P8 ?dhd;         # pub is contribution to a DHd conference
+       wdt:P21 ?author.     # pub has an author
+  ?dhd wdt:P2 wd:Q402101.   # ?dhd is a DHd conference
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
+}
+GROUP BY ?author ?authorLabel
+ORDER BY DESC(?pubCount)

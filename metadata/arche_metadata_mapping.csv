@@ -1,0 +1,25 @@
+ARCHE_Property,Applies_to,Actual_Value_in_TTL,FactGrid_Source,Compliance_Status,Notes
+acdh:hasTitle,TopCollection / Collection / Resource,Descriptive title (EN + DE),rdfs:label of project / thematic grouping,✅ Required,Multilingual; EN mandatory
+acdh:hasDescription,TopCollection / Collection / Resource,Free-text description of scope,,✅ Required,Written manually per level
+acdh:hasDepositor,all levels,https://orcid.org/0000-0002-3324-0938,Project contact (Tinghui Duan),✅ Required,Real ORCID
+acdh:hasPrincipalInvestigator,TopCollection,https://orcid.org/0000-0002-3324-0938,,✅ Required,Same person as depositor
+acdh:hasMetadataCreator,all levels,https://orcid.org/0000-0002-3324-0938,,✅ Required,Person who created the metadata
+acdh:hasRightsHolder,TopCollection,https://orcid.org/0000-0002-3324-0938,,✅ Required,Holds IP rights to the data
+acdh:hasLicensor,TopCollection,https://orcid.org/0000-0002-3324-0938,,✅ Required,Person granting the licence
+acdh:hasOwner,all levels,https://orcid.org/0000-0002-3324-0938,,✅ Required,Legal owner of the data
+acdh:hasContact,all levels,https://orcid.org/0000-0002-3324-0938,,✅ Required,Contact for curation queries
+acdh:hasHosting,TopCollection,https://id.acdh.oeaw.ac.at/arche,,✅ Required,Always the ARCHE node URI
+acdh:hasLicense,all levels,https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0,DHd Book of Abstracts CC BY 4.0,✅ Required,Applied at all levels
+acdh:hasLanguage,TopCollection,"iso6391/de, iso6391/en",FactGrid item labels in DE + EN,✅ Recommended,
+acdh:hasSubject,TopCollection,"Digital Humanities, Wikibase, FactGrid, Bibliometrics, LOD",Project description keywords,✅ Recommended,
+acdh:hasRelatedDiscipline,TopCollection,https://vocabs.acdh.oeaw.ac.at/oefosdisciplines/602,,✅ Recommended,ÖFOS 602 = Informationswissenschaft
+acdh:hasCoverageStartDate,TopCollection,2014-01-01,wdt:P49 of earliest DHd conference,✅ Recommended,
+acdh:hasCoverageEndDate,TopCollection,2025-12-31,wdt:P50 of latest DHd conference,✅ Recommended,
+acdh:hasNamingScheme,TopCollection,"{topic}.csv (lowercase, underscores)",,✅ Good practice,Documents filename pattern
+rdfs:seeAlso,TopCollection,https://database.factgrid.de/wiki/FactGrid:The_DHd_conferences_as_an_evolving_constellation,FactGrid project page,✅ Good practice,External link to live source (replaces acdh:hasUrl)
+acdh:isPartOf,Collection / Resource,Parent collection URI,,✅ Required,Enforces hierarchy
+acdh:hasFilename,Resource,"conferences.csv, publications.csv, authors.csv, author_leaderboard.csv, affiliations.csv, gender_distribution.csv",,✅ Required,Used by repo-file-checker; one value per Resource
+acdh:hasFormat,Resource,text/csv,,✅ Required,MIME type; CSV is accepted + longTerm per arche-assets/formats.json
+acdh:hasCategory,Resource,https://vocabs.acdh.oeaw.ac.at/archecategory/dataset,,✅ Required,Classifies resource type
+acdh:hasCreatedDate,Resource,2026-03-03,Date SPARQL queries were run,✅ Recommended,
+acdh:hasPid,TopCollection,(not in TTL — assigned by ARCHE after ingest),,⏳ Assigned by ARCHE,Do NOT provide manually

@@ -1,0 +1,14 @@
+# Query 1: All DHd annual conferences, basic information
+# Source: https://database.factgrid.de/wiki/FactGrid:The_DHd_conferences_as_an_evolving_constellation
+
+SELECT ?item ?itemLabel ?itemDescription ?Localisation ?LocalisationLabel 
+       ?Begin_date ?End_date ?Website ?Online_information WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
+  ?item wdt:P2 wd:Q402101.
+  OPTIONAL { ?item wdt:P49 ?Begin_date. }
+  OPTIONAL { ?item wdt:P50 ?End_date. }
+  OPTIONAL { ?item wdt:P47 ?Localisation. }
+  OPTIONAL { ?item wdt:P156 ?Website. }
+  OPTIONAL { ?item wdt:P146 ?Online_information. }
+}
+ORDER BY (?itemLabel)

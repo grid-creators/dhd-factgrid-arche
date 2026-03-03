@@ -1,0 +1,14 @@
+# Query 3: All authors of the German annual DHd-conferences from 2014 to 2025
+# Source: https://database.factgrid.de/wiki/FactGrid:The_DHd_conferences_as_an_evolving_constellation
+
+SELECT DISTINCT ?author ?authorLabel ?genderLabel ?orcid WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
+  ?publication wdt:P2 wd:Q257227.       # instance of: conference abstract
+  ?publication wdt:P8 ?conference.    # published in conference
+  ?conference wdt:P2 wd:Q402101.        # conference is DHd annual conference
+  ?publication wdt:P21 ?author.         # author
+  ?author wdt:P408 ?orcid;
+          wdt:P154 ?gender.
+}
+ORDER BY ?orcid
+

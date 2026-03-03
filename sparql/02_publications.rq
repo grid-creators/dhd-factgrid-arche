@@ -1,0 +1,11 @@
+# Query 2: All publications on DHd annual conferences
+# Source: https://database.factgrid.de/wiki/FactGrid:The_DHd_conferences_as_an_evolving_constellation
+
+SELECT ?item ?itemLabel ?author ?authorLabel ?itemDescription WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
+  ?item wdt:P2 wd:Q257227.          # instance of: conference abstract / publication
+  ?item wdt:P8 ?conference.       # published in: DHd conference
+  ?item wdt:P21 ?author.
+  ?conference wdt:P2 wd:Q402101.    # conference is instance of DHd annual conference
+}
+ORDER BY ?itemDescription

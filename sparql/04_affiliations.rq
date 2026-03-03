@@ -1,0 +1,9 @@
+# Query 4: All affiliations of the authors
+# Source: https://database.factgrid.de/wiki/FactGrid:The_DHd_conferences_as_an_evolving_constellation
+
+SELECT DISTINCT ?dhd ?dhdLabel ?affiliation ?affiliationLabel WHERE {
+  ?dhd wdt:P2 wd:Q402101;
+       p:P133/pq:P267 ?affiliation.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
+}
+ORDER BY ?dhdLabel

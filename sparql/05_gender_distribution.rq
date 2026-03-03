@@ -1,0 +1,26 @@
+# Query 5: Verteilung der Geschlechter auf den vergangenen DHd-Konferenzen
+# Source: https://database.factgrid.de/wiki/FactGrid:The_DHd_conferences_as_an_evolving_constellation
+
+SELECT ?dhd ?dhdLabel ?totalCount ?maleCount ?femaleCount 
+       (ROUND((?maleCount * 10000.0) / ?totalCount) / 100.0 AS ?malePercentage)
+       (ROUND((?femaleCount * 10000.0) / ?totalCount) / 100.0 AS ?femalePercentage)
+WHERE {
+  {
+    SELECT ?dhd ?dhdLabel
+           (COUNT(DISTINCT ?maleAuthor) AS ?maleCount)
+           (COUNT(DISTINCT ?femaleAuthor) AS ?femaleCount)
+           (COUNT(DISTINCT ?author) AS ?totalCount)
+    WHERE {
+      ?pub wdt:P2 wd:Q257227;       # Publication is a Digital Humanities publication
+           wdt:P8 ?dhd;             # Has conference (DHD)
+           wdt:P21 ?author.         # Has author
+      ?dhd wdt:P2 wd:Q402101.       # DHD conference
+      ?author wdt:P154 ?gender.     # Author's gender
+      OPTIONAL { ?pub wdt:P21 ?maleAuthor.   ?maleAuthor wdt:P154 wd:Q18. }   # Male authors
+      OPTIONAL { ?pub wdt:P21 ?femaleAuthor. ?femaleAuthor wdt:P154 wd:Q17. } # Female authors
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
+    }
+    GROUP BY ?dhd ?dhdLabel
+  }
+}
+ORDER BY ?dhdLabel

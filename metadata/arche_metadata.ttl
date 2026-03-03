@@ -1,0 +1,174 @@
+@prefix acdh: <https://vocabs.acdh.oeaw.ac.at/schema#> .
+@prefix id: <https://id.acdh.oeaw.ac.at/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/affiliations/affiliations.csv> a acdh:Resource ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/dataset> ;
+    acdh:hasContact <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasCreatedDate "2026-03-03"^^xsd:date ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDescription "CSV via query 04_affiliations.rq. Columns: author, authorLabel, affiliation, affiliationLabel, affiliationCountry, affiliationCountryLabel, conference, conferenceLabel, year."@en ;
+    acdh:hasFilename "affiliations.csv" ;
+    acdh:hasFormat "text/csv" ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasOwner <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasTitle "DHd Author Affiliations"@en ;
+    acdh:isPartOf <https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/affiliations> .
+
+<https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/authors/author_leaderboard.csv> a acdh:Resource ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/dataset> ;
+    acdh:hasContact <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasCreatedDate "2026-03-03"^^xsd:date ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDescription "CSV via query 06_author_leaderboard.rq. Columns: author, authorLabel, orcid, pubCount, conferences."@en ;
+    acdh:hasFilename "author_leaderboard.csv" ;
+    acdh:hasFormat "text/csv" ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasOwner <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasTitle "DHd Author Leaderboard by Publication Count"@en ;
+    acdh:isPartOf <https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/authors> .
+
+<https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/authors/authors.csv> a acdh:Resource ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/dataset> ;
+    acdh:hasContact <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasCreatedDate "2026-03-03"^^xsd:date ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDescription "CSV via query 03_authors.rq. Columns: author, authorLabel, orcid, publication, publicationLabel, conference, conferenceLabel, year."@en ;
+    acdh:hasFilename "authors.csv" ;
+    acdh:hasFormat "text/csv" ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasOwner <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasTitle "DHd Authors - Full List"@en ;
+    acdh:isPartOf <https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/authors> .
+
+<https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/conferences/conferences.csv> a acdh:Resource ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/dataset> ;
+    acdh:hasContact <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasCreatedDate "2026-03-03"^^xsd:date ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDescription "CSV via query 01_conferences.rq. Columns: item, itemLabel, itemDescription, Localisation, LocalisationLabel, Begin_date, End_date, Website, Online_information."@en ;
+    acdh:hasFilename "conferences.csv" ;
+    acdh:hasFormat "text/csv" ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasOwner <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasTitle "DHd Conferences - Basic Data"@en ;
+    acdh:isPartOf <https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/conferences> .
+
+<https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/gender/gender_distribution.csv> a acdh:Resource ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/dataset> ;
+    acdh:hasContact <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasCreatedDate "2026-03-03"^^xsd:date ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDescription "CSV via query 05_gender_distribution.rq. Columns: conference, conferenceLabel, year, gender, genderLabel, count."@en ;
+    acdh:hasFilename "gender_distribution.csv" ;
+    acdh:hasFormat "text/csv" ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasOwner <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasTitle "DHd Gender Distribution per Conference"@en ;
+    acdh:isPartOf <https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/gender> .
+
+<https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/publications/publications.csv> a acdh:Resource ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/dataset> ;
+    acdh:hasContact <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasCreatedDate "2026-03-03"^^xsd:date ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDescription "CSV via query 02_publications.rq. Columns: item, itemLabel, conference, conferenceLabel, year, doi, url."@en ;
+    acdh:hasFilename "publications.csv" ;
+    acdh:hasFormat "text/csv" ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasOwner <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasTitle "DHd Publications - Full List"@en ;
+    acdh:isPartOf <https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/publications> .
+
+<https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/affiliations> a acdh:Collection ;
+    acdh:hasContact <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDescription "Affiliations of DHd authors at the time of each contribution, including country."@en ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasOwner <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasTitle "Institutionelle Zugehoerigkeiten der Autorinnen"@de,
+        "Author Institutional Affiliations"@en ;
+    acdh:isPartOf id:dhd-conferences-factgrid .
+
+<https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/conferences> a acdh:Collection ;
+    acdh:hasContact <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDescription "Basic metadata for each DHd annual conference: location, dates, website."@en ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasOwner <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasTitle "DHd-Jahreskonferenzen"@de,
+        "DHd Annual Conferences"@en ;
+    acdh:isPartOf id:dhd-conferences-factgrid .
+
+<https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/gender> a acdh:Collection ;
+    acdh:hasContact <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDescription "Aggregated gender distribution of authors per DHd conference year."@en ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasOwner <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasTitle "Geschlechterverteilung auf DHd-Konferenzen"@de,
+        "Gender Distribution at DHd Conferences"@en ;
+    acdh:isPartOf id:dhd-conferences-factgrid .
+
+<https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/publications> a acdh:Collection ;
+    acdh:hasContact <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDescription "All papers and abstracts submitted to DHd conferences, with DOI/URL where available."@en ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasOwner <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasTitle "DHd-Konferenzbeitraege und Abstracts"@de,
+        "DHd Conference Publications / Abstracts"@en ;
+    acdh:isPartOf id:dhd-conferences-factgrid .
+
+<https://id.acdh.oeaw.ac.at/dhd-conferences-factgrid/authors> a acdh:Collection ;
+    acdh:hasContact <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDescription "All persons who authored at least one DHd conference contribution, with ORCID identifiers where available."@en ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasOwner <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasTitle "DHd-Konferenzautorinnen"@de,
+        "DHd Conference Authors"@en ;
+    acdh:isPartOf id:dhd-conferences-factgrid .
+
+id:dhd-conferences-factgrid a acdh:TopCollection ;
+    rdfs:seeAlso <https://database.factgrid.de/wiki/FactGrid:The_DHd_conferences_as_an_evolving_constellation> ;
+    acdh:hasContact <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasCoverageEndDate "2025-12-31"^^xsd:date ;
+    acdh:hasCoverageStartDate "2014-01-01"^^xsd:date ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasDescription "This collection preserves structured data about the annual Conferences of the Alliance of Digital Humanities in the German-speaking area (DHd), covering the years 2014-2025. The data was originally modelled in FactGrid, a Wikibase instance for historical and humanities research data, and includes information on conferences, publications/abstracts, authors, institutional affiliations, and gender distribution."@en ;
+    acdh:hasHosting id:arche ;
+    acdh:hasLanguage <https://vocabs.acdh.oeaw.ac.at/iso6391/de>,
+        <https://vocabs.acdh.oeaw.ac.at/iso6391/en> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
+    acdh:hasLicensor <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasMetadataCreator <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasNamingScheme "Files follow the pattern {topic}.csv (lowercase, underscores). No special characters, no spaces. Example: gender_distribution.csv"@en ;
+    acdh:hasOwner <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasPrincipalInvestigator <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasRelatedDiscipline <https://vocabs.acdh.oeaw.ac.at/oefosdisciplines/602> ;
+    acdh:hasRightsHolder <https://orcid.org/0000-0002-3324-0938> ;
+    acdh:hasSubject "Bibliometrics"@en,
+        "Conference Proceedings"@en,
+        "Digital Humanities"@en,
+        "Linked Open Data"@en,
+        "Wikibase"@en ;
+    acdh:hasTitle "DHd-Konferenzen als evolutionäre Konstellation (FactGrid)"@de,
+        "DHd Conferences as an Evolving Constellation (FactGrid)"@en ;
+    acdh:hasUrl <https://database.factgrid.de/wiki/FactGrid:The_DHd_conferences_as_an_evolving_constellation> .
+
+<https://orcid.org/0000-0002-3324-0938> a acdh:Person ;
+    acdh:hasTitle "Tinghui Duan" .
+

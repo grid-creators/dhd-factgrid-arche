@@ -1,4 +1,4 @@
-# DHd Conferences as an Evolving Constellation – ARCHE SIP (demo)
+# DHd Conferences as an Evolving Constellation – ARCHE SIP (Assessment Task)
 
 **Contact:** Tinghui Duan · [FactGrid Project Page](https://database.factgrid.de/wiki/FactGrid:The_DHd_conferences_as_an_evolving_constellation)
 
